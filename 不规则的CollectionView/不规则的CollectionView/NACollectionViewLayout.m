@@ -44,22 +44,33 @@
         CGFloat X = 0+self.sectionInset.left;
         CGFloat Y = 0+self.sectionInset.top;
         
-        if (i == 0) {
-            attribute.frame = CGRectMake(X, Y, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 1){
-            attribute.frame = CGRectMake(X+width*bili1+Margin, Y, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 2){
-            attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 3){
-            attribute.frame = CGRectMake(X, Y+width*bili1/wh_bili1+LineSapce, width*bili2, width*bili2/wh_bili2);
-        }else if (i == 4){
-            attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y+width*bili1/wh_bili1+LineSapce, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 5){
-            attribute.frame = CGRectMake(X, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 6){
-            attribute.frame = CGRectMake(X+width*bili1+Margin, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
-        }else if (i == 7){
-            attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
+        switch (i) {
+            case 0:
+                attribute.frame = CGRectMake(X, Y, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 1:
+                attribute.frame = CGRectMake(X+width*bili1+Margin, Y, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 2:
+                attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 3:
+                attribute.frame = CGRectMake(X, Y+width*bili1/wh_bili1+LineSapce, width*bili2, width*bili2/wh_bili2);
+                break;
+            case 4:
+                attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y+width*bili1/wh_bili1+LineSapce, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 5:
+                attribute.frame = CGRectMake(X, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 6:
+                attribute.frame = CGRectMake(X+width*bili1+Margin, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
+                break;
+            case 7:
+                attribute.frame = CGRectMake(X+width*bili1*2+Margin*2, Y+width*bili1/wh_bili1*2+LineSapce*2, width*bili1, width*bili1/wh_bili1);
+                break;
+            default:
+                break;
         }
     }
     
